@@ -16,4 +16,4 @@ for(let i = 2; i<10 ; i++){
     str +=`</div>`
 }
 container.innerHTML = firest + str;
-Template literals
+
