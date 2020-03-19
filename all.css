@@ -1,141 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "PingFangTC-Medium", sans-serif;
-  color: #2EB738;
-  list-style: none;
-}
+let container = document.querySelector('.container');
+let firest = `<div class="first">
+<div class="txt">
+  <div class="title">九九乘法表</div>
+  <p>MULTIPLICATION CHART</p>
+</div>
+</div>`;
 
-.container {
-  width: 1110px;
-  margin: 0 auto;
-  margin-top: 20px;
-  background-color: #F0F0F0;
-  padding: 80px 85px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
-}
+let str = '';
 
-.container .card {
-  width: 350px;
-  height: 302px;
-  background-color: #fff;
-  border-radius: 100px 0 30px 0;
-  margin-bottom: 40px;
-  -webkit-box-shadow: 0 3px 10px #D8D8D8;
-          box-shadow: 0 3px 10px #D8D8D8;
-  margin-left: 30px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 64px;
+for(let i = 2; i<10 ; i++){
+    str += `<div class="card"><h3>${i}</h3>`;
+    for(let j = 1; j<10 ; j++){
+        str += `<li>${i} x ${j} = ${i*j}</li>`
+    }
+    str +=`</div>`
 }
-
-.container .card:nth-child(4) {
-  margin-left: 0;
-}
-
-.container .card:nth-child(7) {
-  margin-left: 0;
-}
-
-.container .card h3 {
-  display: inline-block;
-  width: 71px;
-  font-size: 128px;
-  margin-left: 61px;
-  margin-top: 34px;
-  text-shadow: 4px 3px 0 #F0F0F0;
-}
-
-.container .card li {
-  display: inline-block;
-  text-align: left;
-  font-size: 24px;
-  margin-left: 40px;
-  margin-bottom: 8px;
-}
-
-.container .card li:nth-child(5) {
-  margin-top: 74px;
-}
-
-.container .first {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  width: 350px;
-  height: 366px;
-}
-
-.container .first .txt {
-  text-align: center;
-  position: relative;
-}
-
-.container .first .txt .title {
-  font-size: 56px;
-}
-
-.container .first .txt p {
-  font-size: 24px;
-}
-
-.container .first:before {
-  content: '';
-  width: 80%;
-  height: 1px;
-  background-color: #2EB738;
-  position: absolute;
-  top: 10px;
-  left: 10%;
-}
-
-.container .first:after {
-  content: '';
-  width: 80%;
-  height: 1px;
-  background-color: #2EB738;
-  position: absolute;
-  bottom: 10px;
-  left: 10%;
-}
-
-.container .footer {
-  width: 100%;
-  height: 34px;
-  background-color: #2EB738;
-  color: #fff;
-  text-align: end;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-/*# sourceMappingURL=all.css.map */
+let footer = `<div class="footer">Copyright © 2019 HexSchool. All rights reserved.</div>`
+container.innerHTML = firest + str +footer;
