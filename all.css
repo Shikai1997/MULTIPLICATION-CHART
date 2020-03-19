@@ -17,6 +17,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
 }
 
 .container .card {
@@ -115,5 +116,26 @@
   position: absolute;
   bottom: 10px;
   left: 10%;
+}
+
+.container .footer {
+  width: 100%;
+  height: 34px;
+  background-color: #2EB738;
+  color: #fff;
+  text-align: end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=all.css.map */
