@@ -15,5 +15,5 @@ for(let i = 2; i<10 ; i++){
     }
     str +=`</div>`
 }
-container.innerHTML = firest + str;
-
+let footer = `<div class="footer">Copyright © 2019 HexSchool. All rights reserved.</div>`
+container.innerHTML = firest + str +footer;
