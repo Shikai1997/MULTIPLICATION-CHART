@@ -21,8 +21,10 @@
 }
 
 .container .card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 350px;
-  height: 302px;
+  height: 366px;
   background-color: #fff;
   border-radius: 100px 0 30px 0;
   margin-bottom: 40px;
@@ -38,7 +40,6 @@
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 64px;
 }
 
 .container .card:nth-child(4) {
@@ -67,7 +68,7 @@
 }
 
 .container .card li:nth-child(5) {
-  margin-top: 74px;
+  margin-top: 85px;
 }
 
 .container .first {
