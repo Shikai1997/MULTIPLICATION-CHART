@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -99,24 +100,39 @@
   font-size: 24px;
 }
 
-.container .first:before {
-  content: '';
-  width: 80%;
+.container .first .line {
+  position: absolute;
+  width: 70%;
+  margin: 0 auto;
   height: 1px;
   background-color: #2EB738;
-  position: absolute;
-  top: 10px;
-  left: 10%;
+  top: 5%;
 }
 
-.container .first:after {
-  content: '';
-  width: 80%;
-  height: 1px;
-  background-color: #2EB738;
+.container .first .line::before {
+  content: '×';
+  font-size: 24px;
+  width: 14px;
+  height: 28px;
+  color: #2EB738;
   position: absolute;
-  bottom: 10px;
-  left: 10%;
+  left: -28px;
+  top: -18px;
+}
+
+.container .first .line:after {
+  content: '×';
+  font-size: 24px;
+  width: 14px;
+  height: 28px;
+  color: #2EB738;
+  position: absolute;
+  right: -28px;
+  top: -18px;
+}
+
+.container .first .line:nth-of-type(2) {
+  top: 95%;
 }
 
 .container .footer {
