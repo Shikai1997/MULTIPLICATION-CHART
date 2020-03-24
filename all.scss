@@ -15,8 +15,9 @@
     flex-wrap: wrap;
     position: relative;
     .card{
+        box-sizing: border-box;
         width: 350px;
-        height: 302px;
+        height: 366px;
         background-color: #fff;
         border-radius: 100px 0 30px 0;
         margin-bottom: 40px;
@@ -25,7 +26,6 @@
         display: inline-flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding-bottom: 64px;
 
         &:nth-child(4){
             margin-left: 0;
@@ -48,7 +48,7 @@
             margin-left: 40px;
             margin-bottom: 8px;
             &:nth-child(5){
-                margin-top: 74px;
+                margin-top: 85px;
             }
         }
     }
