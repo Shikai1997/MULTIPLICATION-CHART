@@ -70,23 +70,36 @@
                 font-size: 24px;
             }
         }
-        &:before{
-            content: '';
-            width: 80%;
+        .line{
+            position: absolute;
+            width: 70%;
+            margin: 0 auto;
             height: 1px;
             background-color: #2EB738;
-            position: absolute;
-            top: 10px;
-            left: 10%;
-        }
-        &:after{
-            content: '';
-            width: 80%;
-            height: 1px;
-            background-color: #2EB738;
-            position: absolute;
-            bottom: 10px;
-            left: 10%;
+            top:5%;
+            &::before{
+                content: '×';
+                font-size: 24px;
+                width: 14px;
+                height: 28px;
+                color: #2EB738;
+                position: absolute;
+                left: -28px;
+                top: -18px;
+            }
+            &:after{
+                content: '×';
+                font-size: 24px;
+                width: 14px;
+                height: 28px;
+                color: #2EB738;
+                position: absolute;
+                right: -28px;
+                top: -18px;
+            }
+            &:nth-of-type(2){
+                top: 95%;
+            }
         }
     }
     .footer{
