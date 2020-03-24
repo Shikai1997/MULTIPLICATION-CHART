@@ -1,9 +1,11 @@
 let container = document.querySelector('.container');
 let firest = `<div class="first">
+<span class="line"></span>
 <div class="txt">
   <div class="title">九九乘法表</div>
   <p>MULTIPLICATION CHART</p>
 </div>
+<span class="line"></span>
 </div>`;
 
 let str = '';
