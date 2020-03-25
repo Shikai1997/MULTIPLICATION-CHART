@@ -1,6 +1,6 @@
 ## MULTIPLICATION-CHART
 
- # 六角題目篇 - 新手js地下城 - 九九乘法表
+ ## 六角題目篇 - 新手js地下城 - 九九乘法表
  
  
   * [DEMO](https://shikai1997.github.io/MULTIPLICATION-CHART/)
